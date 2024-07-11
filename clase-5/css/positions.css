@@ -1,0 +1,170 @@
+/**
+* Relative */
+
+.relative-container {
+    width: 300px;
+    height: 200px;
+    border: 5px solid black;
+    position: relative;
+  }
+  
+  .relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background-color: lightblue;
+    padding: 10px;
+  }
+
+  /*absolute*/
+  .absolute-container {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+  }
+  
+  .absolute-box {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    background-color: lightgreen;
+    padding: 10px;
+  }
+
+  /* Static */
+  .static-container {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+  }
+  
+  .static-box {
+    position: static;
+    background-color: lightgray;
+   
+    padding: 10px;
+  }
+
+  /* Fixed */
+/**
+  .fixed-box {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    background-color: coral;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .content {
+    margin-top: 60px;
+  } **/
+
+  /* Sticky */
+
+  dt {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 50px;
+    left: 0;
+    margin: 1em 0;
+  }
+
+  /** z-index **/
+
+
+  .zindex-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+  }
+  
+  .box1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    z-index: 1;
+  }
+  
+  .box2 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    z-index: 2;
+  }
+
+  /** Float ***/
+
+  body {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+  }
+  
+  .box {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(207, 232, 220);
+    padding: 1em;
+  }
+  
+  /** Float box **/
+  
+  .box {
+    float: left;
+    margin-right: 15px;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: rgb(207, 232, 220);
+    padding: 1em;
+  }
+
+
+  /**.centrar-div {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    background-color: rebeccapurple;
+    aspect-ratio: 1 / 1;
+    top: calc(50vh - 50px);
+    left: calc(50% - 50px);
+  }**/
+
+  .box-10 {
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100%;
+  }
+
+  .centrar-div {
+    width: 100%;
+    height: 100vh;
+    background-color: blanchedalmond;
+    /**display: flex;
+    align-items: center;
+    justify-content: center;**/
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1px;
+  }
+
+
+  .centrar-div .box-10:nth-child(10) {
+    background-color: tomato;
+    grid-column-start: 3;
+    grid-row-start: 5;
+  }
