@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css">
         <link rel="stylesheet" href="./css/style.css">
+        <script type="module" src="./js/index.js"></script>
         <title>Home - Trakor</title>
     </head>
     <body>
@@ -12,26 +14,34 @@
                 <figure>
                     <img id="img-logo" src="./img/trakor.png" alt="Logo">
                 </figure>
-                <nav>
-                    <ul class="header__menu">
-                        <li>
-                            <a href="#!">Product</a>
-                        </li>
-                        <li>
-                            <a href="#!">Solutions</a>
-                        </li>
-                        <li>
-                            <a href="#!">Documentation</a>
-                        </li>
-                        <li>
-                            <a href="#!">Pricing</a>
-                        </li>
-                    </ul>
-                </nav>
-                <section>
-                    <button class="button button-transparent">Log In</button>
-                    <button class="button button-secondary">Request more info</button>
-                </section>
+                <div id="menu-container" class="menu-container">
+                    <nav class="menu-items">
+                        <ul class="header__menu">
+                            <li class="list-test">
+                                <a href="#!">Product</a>
+                            </li>
+                            <li class="list-test">
+                                <a href="#!">Solutions</a>
+                            </li>
+                            <li class="list-test">
+                                <a href="#!">Documentation</a>
+                            </li>
+                            <li class="list-test">
+                                <a href="#!">Pricing</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section class="button-items">
+                        <button class="button button-transparent">Log In</button>
+                        <button class="button button-secondary">Request more info</button>
+                    </section>
+                </div>
+
+                <button id="menu-btn" class="button-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+
             </div>
         </header>
 

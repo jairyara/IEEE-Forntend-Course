@@ -31,9 +31,30 @@ body {
     font-size: 1rem;
 }
 
+.button-menu {
+    width: 40px;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    border: 1px solid var(--blue-gray-600);
+    background-color: var(--blue-gray-700);
+    color: var(--white);
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-active {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background-color: var(--bg-color);
+    flex-direction: column;
+
+}
+
 .button-primary {
     background-color: var(--indigo-600);
-
 }
 
 .button-primary:hover {
@@ -103,6 +124,14 @@ body {
     text-decoration: none;
 }
 
+
+.close i:first-child {
+    display: none;
+}
+
+.button-menu i:last-child {
+    display: none;
+}
 
 /** Hero **/
 
@@ -469,11 +498,36 @@ body {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 400px) {
     .hero {
         width: 100%;
         padding: 30px 16px;
         height: fit-content;
+    }
+
+    .button-menu {
+        display: block;
+    }
+
+    .menu-container {
+        width: 100%;
+        display: none;
+    }
+
+    .menu-active {
+        display: flex;
+    }
+
+    .menu-active .header__menu {
+        padding: 20px 16px;
+        flex-direction: column;
+    }
+
+    .close i:last-child {
+        display: block;
+    }
+    .menu-container p {
+        color: var(--white);
     }
 
     .hero .hero__cta {
