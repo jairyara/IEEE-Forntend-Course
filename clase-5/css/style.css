@@ -109,6 +109,10 @@ body {
     width: 95px;
 }
 
+.menu-container {
+    width: 80%;
+}
+
 .header .header__container nav ul.header__menu {
     display: flex;
     justify-content: center;
